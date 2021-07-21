@@ -7,7 +7,7 @@ namespace String_Calculator
 {
     public class Calculator
     {
-        public int Add(string numbers)
+        public virtual int Add(string numbers)
         {
             IEnumerable<string> delimiters = ParseDelimiters(numbers);
             IEnumerable<int> parsedNumbers = ParseInput(numbers, delimiters);
